@@ -1,0 +1,19 @@
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px 10px;
+    /* border-color: black;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+.notBorder{
+    border: none;
+}
+
+.color-red {
+    background-color: red;
+}
