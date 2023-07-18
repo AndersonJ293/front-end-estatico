@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --azulClaro: #7ebff2;
+  --azulEscuro: #4a87ec;
+  --roxo: #7073ec;
+  --cinza: #cecdcd;
+  --titlefont: "Poppins", sans-serif;
+}
+
+.plansTable {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--cinza);
+  padding: 10px;
+}
+
+.notBorder {
+  border: none;
+}
+
+.tableHeader {
+  font-family: var(--titlefont);
+  font-size: 14px;
+}
+
+.tableBody {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.rowTitle {
+  text-align: start;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.basicPlanPrice,
+.basicPlanButton {
+  background-color: var(--azulClaro);
+  color: white;
+  font-weight: 600;
+}
+
+.defaultPlanPrice,
+.defaultPlanButton {
+  background-color: var(--azulEscuro);
+  color: white;
+  font-weight: 600;
+}
+
+.advancedPlanPrice,
+.advancedPlanButton {
+  background-color: var(--roxo);
+  color: white;
+  font-weight: 600;
+}
+
+.basicPlanPrice,
+.defaultPlanPrice,
+.advancedPlanPrice {
+  font-size: 16px;
+}
+
+.tableFooter {
+  text-align: center;
+}
+
+.basicPlanButton,
+.defaultPlanButton,
+.advancedPlanButton {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
