@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+:root {
+  --font: "Nunito", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.formWrapper {
+  position: relative;
+  width: 35vw;
+  height: 75vh;
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background-color: #8606ef43;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  font-family: var(--font);
+  font-size: 4.5vh;
+  font-weight: 700;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.inputTitle {
+  font-family: var(--font);
+  font-size: 2.2vh;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.inputWrapper > input {
+  border: none;
+  background-color: #ffffff81;
+  padding: 5px 20px;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  font-family: var(--font);
+}
+
+.inputWrapper > input:focus {
+  border-bottom: 2px solid #6302b29b;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxInput {
+  appearance: none;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  width: 0.9em;
+  height: 0.9em;
+  border: 0.12em solid #fff;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  cursor: pointer;
+}
+
+.checkboxInput::before {
+  content: "";
+  width: 0.52em;
+  height: 0.52em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #fff;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.checkboxInput:checked::before {
+  transform: scale(1);
+}
+
+.checkboxText {
+  font-family: var(--font);
+  font-size: 2vh;
+  font-style: italic;
+  color: #fff;
+}
+
+.submitButton {
+  margin-top: 10px;
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font);
+  font-size: 2.2vh;
+  font-weight: 700;
+  color: white;
+  background-color: #5806ef;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #4400c3;
+}

@@ -4,6 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="formWrapper">
+      <div class="title">Cadastro</div>
+      <form action="#">
+        <div class="inputWrapper">
+          <span class="inputTitle">Nome</span>
+          <input type="text" required />
+        </div>
+        <div class="inputWrapper">
+          <span class="inputTitle">Email</span>
+          <input type="email" required />
+        </div>
+        <div class="inputWrapper">
+          <span class="inputTitle">Senha</span>
+          <input type="password" required />
+        </div>
+        <div class="inputWrapper">
+          <span class="inputTitle">Telefone</span>
+          <input type="text" title="Apenas Números" maxlength="11" required />
+        </div>
+        <div class="inputWrapper">
+          <span class="inputTitle">Data de Nascimento</span>
+          <input type="date" required />
+        </div>
+        <div class="inputWrapper">
+          <span class="inputTitle">Idade</span>
+          <input type="number" required />
+        </div>
+        <div class="checkboxWrapper">
+          <input
+            class="checkboxInput"
+            type="checkbox"
+            name="termAccept"
+            id="termAccept"
+            required
+          />
+          <span class="checkboxText">Aceito os termos.</span>
+        </div>
+        <button type="submit" class="submitButton">Cadastrar</button>
+      </form>
+    </div>
+  </body>
 </html>
